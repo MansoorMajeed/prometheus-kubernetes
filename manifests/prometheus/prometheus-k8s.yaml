@@ -19,9 +19,6 @@ spec:
   version: PROMETHEUS_VERSION
   externalUrl: PROMETHEUS_EXTERNAL_URL
   serviceAccountName: prometheus-k8s
-  serviceMonitorSelector:
-    matchExpressions:
-    - {key: k8s-app, operator: Exists}
   ruleSelector:
     matchLabels:
       role: prometheus-rulefiles
